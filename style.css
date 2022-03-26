@@ -1,0 +1,111 @@
+body{
+    background: #333;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+}
+
+.collection-list {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+  }
+  @media (max-width: 991px) {
+    .collection-list {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+  .collection-showcase-mini-1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    background-position: center;
+    background-size: cover;
+    justify-content: flex-end;
+    height: 600px;
+    background-image: url(/Users/kaitlyndolan/Desktop/100devs/cocktailsAPI/cocktail-API/whiskeysour.jpg);
+    background-repeat: no-repeat;
+    width: 33%;
+    cursor: default;
+    pointer-events: auto;
+    border-style: solid;
+    border-color: rgba(174, 250, 7, 1);
+    border-width: 14px;
+    font-family: "Times New Roman", serif;
+    color: rgba(255, 255, 255, 1);
+    margin-left: 20px;
+    line-height: normal;
+    text-align: center;
+  }
+  @media (max-width: 991px) {
+    .collection-showcase-mini {
+      width: 100%;
+    }
+  }
+  .collection-showcase-mini-2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    background-position: center;
+    background-size: cover;
+    justify-content: flex-end;
+    height: 600px;
+    background-image: url(/Users/kaitlyndolan/Desktop/100devs/cocktailsAPI/cocktail-API/polermo.jpg);
+    background-repeat: no-repeat;
+    width: 33%;
+    border-color: rgba(255, 133, 151, 1);
+    border-style: solid;
+    border-width: 13px;
+    cursor: default;
+    pointer-events: auto;
+  }
+  @media (max-width: 991px) {
+    .collection-showcase-mini-2 {
+      width: 100%;
+    }
+  }
+  .collection-showcase-mini-3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    background-position: center;
+    background-size: cover;
+    justify-content: flex-end;
+    height: 600px;
+    background-image: url(/Users/kaitlyndolan/Desktop/100devs/cocktailsAPI/cocktail-API/screwdriver.jpg);
+    background-repeat: no-repeat;
+    width: 33%;
+    border-color: rgba(80, 253, 241, 1);
+    border-style: solid;
+    border-width: 11px;
+    pointer-events: auto;
+    cursor:default;
+  }
+  @media (max-width: 991px) {
+    .collection-showcase-mini-3 {
+      width: 100%;
+    }
+  }
