@@ -1,39 +1,36 @@
 body{
-    background: #333;
+    background: #262424;
     color: #fff;
     cursor: text;
 }
 
 a{
     text-decoration: none;
-    color: white;
+    color: aqua;
     font-size: 50px;
 }
 
-h2{
+a>h2{
   opacity: 0;
 }
-h2:hover{
+a h2:hover{
   opacity: 1;
 }
 
-.collection-list {
+.collection {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     position: relative;
     margin-top: 20px;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     overflow: hidden;
     font-family: "Times New Roman", serif;
-  }
-  @media (max-width: 991px) {
-    .collection-list {
-      display: flex;
-      flex-direction: column;
-      align-items: stretch;
-    }
-  }
+  } 
+
+
+
   .collection-showcase-mini-1 {
     position: relative;
     display: flex;
@@ -45,66 +42,66 @@ h2:hover{
     background-size: cover;
     justify-content: center;
     height: 500px;
-    background-image: url("/Users/kaitlyndolan/Desktop/100devs/cocktailsAPI/cocktail-API/whiskeysour.jpg");
+    background-image: url();
     background-repeat: no-repeat;
-    width: 33%;
+    width: 30%;
+    margin: auto;
     border: 3px solid white;
-    color: rgba(255, 255, 255, 1);
     margin-left: 20px;
-    line-height: normal;
+    box-shadow: #fff;
+    margin-right: 100px;
   }
   @media (max-width: 991px) {
     .collection-showcase-mini-1 {
       width: 100%;
     }
   }
-  .collection-showcase-mini-2 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 0px;
-    padding-bottom: 0px;
-    background-position: center;
-    background-size: cover;
-    justify-content: center;
-    height: 500px;
-    background-image: url("/Users/kaitlyndolan/Desktop/100devs/cocktailsAPI/cocktail-API/polermo.jpg");
-    background-repeat: no-repeat;
-    width: 33%;
-    border: 3px solid white;
-    color: rgba(255, 255, 255, 1);
-
-  }
-  @media (max-width: 991px) {
-    .collection-showcase-mini-2 {
-      width: 100%;
-    }
-  }
-  .collection-showcase-mini-3 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 0;
-    padding-bottom: 0;
-    background-position: center;
-    background-size: cover;
-    justify-content: center;
-    height: 500px;
-    background-image: url("/Users/kaitlyndolan/Desktop/100devs/cocktailsAPI/cocktail-API/screwdriver.jpg");
-    background-repeat: no-repeat;
-    width: 33%;
-    border: 3px solid white;
-  }
-  @media (max-width: 991px) {
-    .collection-showcase-mini-3 {
-      width: 100%;
-    }
-  }
 
   h1{
-    text-align: center;
-    font-size: 40px;
-    font-weight: 500;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 60px;
+    font-weight: 700;
+    color: #67DFFA;
+    margin-top: 100px;
+    margin-left: 50px;
   }
+
+
+.header:after {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    -webkit-animation: ellipsis steps(4,end) 900ms infinite;      
+    animation: ellipsis steps(4,end) 900ms infinite;
+    content: "\2026"; /* ascii code for the ellipsis character */
+    width: 0px;
+    font-size: 60px;
+    color: aqua
+  }
+  
+  @keyframes ellipsis {
+    to {
+      width: 1.25em;    
+    }
+  }
+  
+  @-webkit-keyframes ellipsis {
+    to {
+      width: 1.25em;    
+    }
+  }
+}
+
+.nav{
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  font-size: 30px;
+  color: lawngreen
+}
+
+a:hover{
+  color: palevioletred;
+}
