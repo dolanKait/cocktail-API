@@ -1,65 +1,58 @@
 body{
     background: #262424;
     color: #fff;
-    cursor: text;
+    cursor: pointer;
 }
 
 a{
     text-decoration: none;
-    color: aqua;
-    font-size: 50px;
-}
-
-a>h2{
-  opacity: 0;
-}
-a h2:hover{
-  opacity: 1;
-}
-
-.collection {
+    font-size: 30px;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
+}
+
+
+.img-container {
+    display: block;
     position: relative;
     margin-top: 20px;
     justify-content: flex-end;
     align-items: center;
     overflow: hidden;
-    font-family: "Times New Roman", serif;
   } 
 
 
 
-  .collection-showcase-mini-1 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 0px;
-    padding-bottom: 0px;
+  .img-container{
+    margin-right: 100px;
+    margin-bottom: 50px;
     background-position: center;
-    background-size: cover;
+    display: flex;
+    object-fit: contain;
     justify-content: center;
     height: 500px;
     background-image: url();
     background-repeat: no-repeat;
-    width: 30%;
-    margin: auto;
+    width: 40%;
     border: 3px solid white;
-    margin-left: 20px;
     box-shadow: #fff;
-    margin-right: 100px;
+    float: right;
   }
   @media (max-width: 991px) {
     .collection-showcase-mini-1 {
       width: 100%;
     }
   }
+  
+img{
+  height: 500px;
+  width: 100%;
+  padding: 10px;
+}
 
   h1{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     font-size: 60px;
     font-weight: 700;
@@ -69,12 +62,12 @@ a h2:hover{
   }
 
 
-.header:after {
+.eli:after {
     overflow: hidden;
     display: inline-block;
     vertical-align: bottom;
-    -webkit-animation: ellipsis steps(4,end) 900ms infinite;      
-    animation: ellipsis steps(4,end) 900ms infinite;
+    -webkit-animation: ellipsis steps(4,end) 1000ms infinite;      
+    animation: ellipsis steps(4,end) 1000ms infinite;
     content: "\2026"; /* ascii code for the ellipsis character */
     width: 0px;
     font-size: 60px;
@@ -96,12 +89,25 @@ a h2:hover{
 
 .nav{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   line-height: 1.5;
   font-size: 30px;
-  color: lawngreen
+  justify-content: center;
+  flex-wrap: wrap;
+
 }
 
+li{
+  list-style: none;
+  display: inline-flex;
+  justify-content: center;
+  margin: 0 15px;
+  flex-grow: 2;
+}
+
+a{
+  color: lawngreen;
+}
 a:hover{
   color: palevioletred;
 }
