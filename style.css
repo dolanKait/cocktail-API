@@ -118,3 +118,7 @@ a:hover{
   float: left;
   clear:right;
 }
+
+hi nav{
+  position: fixed;
+}
